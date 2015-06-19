@@ -24,8 +24,9 @@ class GameScene: SKScene {
     let fall2 = SKAction.moveTo(CGPoint(x: 25, y: 197), duration: 2)
     let fall3 = SKAction.moveTo(CGPoint(x: 1075, y: 197), duration: 2)
     let fall4 = SKAction.moveTo(CGPoint(x: 50, y: 197), duration: 2)
-    
-    
+    let backround = SKSpriteNode(imageNamed: "gameover")
+    let tryagain = SKSpriteNode(imageNamed: "tryagain")
+
     
     
     
@@ -36,7 +37,13 @@ class GameScene: SKScene {
        world = childNodeWithName("world")!
         platform = world.childNodeWithName("platform")!
         
+        startGame()
+    }
+    
+    func startGame() {
         
+        hero.texture = SKTexture(imageNamed: "punch1")
+        hero.size = hero.texture!.size()
         hero.position = CGPoint(x: self.size.width*0.5, y: self.size.height*0.234)
         hero.anchorPoint = CGPoint(x: 0.5, y: 0.0)
         
@@ -44,13 +51,20 @@ class GameScene: SKScene {
         world.addChild(grunts)
         addChild(healthbar)
         addChild(enemieskilled)
+        
 
-    
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         /* Called when a touch begins */
         
+        if backround.parent != nil {
+            world.removeChildrenInArray([grunts, hero])
+            hero.removeAllActions()
+            grunts.removeAllChildren()
+            removeChildrenInArray([enemieskilled, healthbar, backround, tryagain])
+            startGame()
+        }
     }
     
     func punch() {
@@ -139,6 +153,8 @@ class GameScene: SKScene {
         world.position.y = -hero.position.y + self.size.height*0.2
         if hero.frame .intersects(platform.frame) == false {
             hero.runAction(SKAction.repeatActionForever(SKAction.moveBy(CGVector(dx: 0, dy: -500), duration: 2)))
+            showGameOver()
+
         }
     
         // GRUNT PUNCH SECTION
@@ -160,15 +176,16 @@ class GameScene: SKScene {
                     grunt.runAction(SKAction.sequence([SKAction.waitForDuration(0.2), SKAction.runBlock({ () -> Void in
                         self.herohealth = self.herohealth - 1
                         self.healthbar.text = "\(self.herohealth) /50"
+                        self.healthbar.position = CGPoint(x: self.size.width*0.87, y: self.size.height*0.9)
+                    self.healthbar.zPosition = 4
+                    if self.herohealth == 0 {
+                   self.hero.removeFromParent()
+                   self.healthbar.removeFromParent()
+                   self.showGameOver()
+                    }
                     }), actionAnim]), withKey: "punch")
                    
-                    healthbar.position = CGPoint(x: self.size.width*0.87, y: self.size.height*0.9)
-                    healthbar.zPosition = 4
-                    if herohealth == 0 {
-                        hero.removeFromParent()
-                        healthbar.removeFromParent()
-                        showGameOver()
-                    }
+                    
                 }
             }
         }
@@ -237,11 +254,18 @@ class GameScene: SKScene {
     }
  
     func showGameOver() {
-        let backround = SKSpriteNode(imageNamed: "gameover")
-        backround.position = CGPoint(x: self.size.width*0.5, y: self.size.width*0.38)
-        backround.size = CGSize(width: self.size.width, height: self.size.height)
-        backround.zPosition = 16
-        addChild(backround)
+        if backround.parent == nil {
+            backround.position = CGPoint(x: self.size.width*0.5, y: self.size.width*0.38)
+            backround.size = CGSize(width: self.size.width, height: self.size.height)
+            backround.zPosition = 16
+            addChild(backround)
+          
+            tryagain.position = CGPoint(x: self.size.width*0.5, y: self.size.height*0.30)
+            tryagain.size = CGSize(width: 200, height: 200)
+            tryagain.zPosition = 20
+            addChild(tryagain)
+            
+        }
     }
 }
 
