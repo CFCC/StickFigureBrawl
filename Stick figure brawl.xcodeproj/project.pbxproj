@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE7010F21B333FBC00876DD3 /* gruntpunch.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CE7010F11B333FBC00876DD3 /* gruntpunch.atlas */; };
+		CE7010F41B34661200876DD3 /* gruntrun.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CE7010F31B34661200876DD3 /* gruntrun.atlas */; };
+		CE7010F81B34994F00876DD3 /* tryagain.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7010F71B34994F00876DD3 /* tryagain.png */; };
+		CE7010FA1B34997800876DD3 /* gameover.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7010F91B34997800876DD3 /* gameover.png */; };
+		CEE3FF0D1B31BDB1004C2FB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3FF0C1B31BDB1004C2FB8 /* AppDelegate.swift */; };
+		CEE3FF0F1B31BDB1004C2FB8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CEE3FF0E1B31BDB1004C2FB8 /* GameScene.sks */; };
+		CEE3FF111B31BDB1004C2FB8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3FF101B31BDB1004C2FB8 /* GameScene.swift */; };
+		CEE3FF131B31BDB1004C2FB8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3FF121B31BDB1004C2FB8 /* GameViewController.swift */; };
+		CEE3FF161B31BDB1004C2FB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE3FF141B31BDB1004C2FB8 /* Main.storyboard */; };
+		CEE3FF181B31BDB1004C2FB8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE3FF171B31BDB1004C2FB8 /* Images.xcassets */; };
+		CEE3FF1B1B31BDB1004C2FB8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE3FF191B31BDB1004C2FB8 /* LaunchScreen.xib */; };
+		CEE3FF271B31BDB1004C2FB8 /* Stick_figure_brawlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE3FF261B31BDB1004C2FB8 /* Stick_figure_brawlTests.swift */; };
+		CEE3FF311B31BE2A004C2FB8 /* punching.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CEE3FF301B31BE2A004C2FB8 /* punching.atlas */; };
+		CEE3FF331B3207A8004C2FB8 /* attack.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE3FF321B3207A8004C2FB8 /* attack.png */; };
+		CEE3FF351B322FC5004C2FB8 /* running.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CEE3FF341B322FC5004C2FB8 /* running.atlas */; };
+		CEE3FF371B32FEC5004C2FB8 /* runright.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE3FF361B32FEC5004C2FB8 /* runright.png */; };
+		CEE3FF391B3307FF004C2FB8 /* platform.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE3FF381B3307FF004C2FB8 /* platform.png */; };
+		CEE3FF3B1B330C11004C2FB8 /* runleft.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE3FF3A1B330C11004C2FB8 /* runleft.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEE3FF211B31BDB1004C2FB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEE3FEFF1B31BDB1004C2FB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEE3FF061B31BDB1004C2FB8;
+			remoteInfo = "Stick figure brawl";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE7010F11B333FBC00876DD3 /* gruntpunch.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = gruntpunch.atlas; sourceTree = "<group>"; };
+		CE7010F31B34661200876DD3 /* gruntrun.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = gruntrun.atlas; sourceTree = "<group>"; };
+		CE7010F71B34994F00876DD3 /* tryagain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tryagain.png; sourceTree = "<group>"; };
+		CE7010F91B34997800876DD3 /* gameover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameover.png; sourceTree = "<group>"; };
+		CEE3FF071B31BDB1004C2FB8 /* Stick figure brawl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stick figure brawl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE3FF0B1B31BDB1004C2FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE3FF0C1B31BDB1004C2FB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEE3FF0E1B31BDB1004C2FB8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		CEE3FF101B31BDB1004C2FB8 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		CEE3FF121B31BDB1004C2FB8 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		CEE3FF151B31BDB1004C2FB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEE3FF171B31BDB1004C2FB8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CEE3FF1A1B31BDB1004C2FB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CEE3FF201B31BDB1004C2FB8 /* Stick figure brawlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stick figure brawlTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE3FF251B31BDB1004C2FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE3FF261B31BDB1004C2FB8 /* Stick_figure_brawlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stick_figure_brawlTests.swift; sourceTree = "<group>"; };
+		CEE3FF301B31BE2A004C2FB8 /* punching.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = punching.atlas; sourceTree = "<group>"; };
+		CEE3FF321B3207A8004C2FB8 /* attack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = attack.png; sourceTree = "<group>"; };
+		CEE3FF341B322FC5004C2FB8 /* running.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = running.atlas; sourceTree = "<group>"; };
+		CEE3FF361B32FEC5004C2FB8 /* runright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runright.png; sourceTree = "<group>"; };
+		CEE3FF381B3307FF004C2FB8 /* platform.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = platform.png; sourceTree = "<group>"; };
+		CEE3FF3A1B330C11004C2FB8 /* runleft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runleft.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEE3FF041B31BDB1004C2FB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE3FF1D1B31BDB1004C2FB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEE3FEFE1B31BDB1004C2FB8 = {
+			isa = PBXGroup;
+			children = (
+				CEE3FF091B31BDB1004C2FB8 /* Stick figure brawl */,
+				CEE3FF231B31BDB1004C2FB8 /* Stick figure brawlTests */,
+				CEE3FF081B31BDB1004C2FB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEE3FF081B31BDB1004C2FB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEE3FF071B31BDB1004C2FB8 /* Stick figure brawl.app */,
+				CEE3FF201B31BDB1004C2FB8 /* Stick figure brawlTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEE3FF091B31BDB1004C2FB8 /* Stick figure brawl */ = {
+			isa = PBXGroup;
+			children = (
+				CEE3FF321B3207A8004C2FB8 /* attack.png */,
+				CEE3FF361B32FEC5004C2FB8 /* runright.png */,
+				CEE3FF3A1B330C11004C2FB8 /* runleft.png */,
+				CE7010F91B34997800876DD3 /* gameover.png */,
+				CE7010F71B34994F00876DD3 /* tryagain.png */,
+				CEE3FF381B3307FF004C2FB8 /* platform.png */,
+				CE7010F31B34661200876DD3 /* gruntrun.atlas */,
+				CE7010F11B333FBC00876DD3 /* gruntpunch.atlas */,
+				CEE3FF341B322FC5004C2FB8 /* running.atlas */,
+				CEE3FF301B31BE2A004C2FB8 /* punching.atlas */,
+				CEE3FF0C1B31BDB1004C2FB8 /* AppDelegate.swift */,
+				CEE3FF0E1B31BDB1004C2FB8 /* GameScene.sks */,
+				CEE3FF101B31BDB1004C2FB8 /* GameScene.swift */,
+				CEE3FF121B31BDB1004C2FB8 /* GameViewController.swift */,
+				CEE3FF141B31BDB1004C2FB8 /* Main.storyboard */,
+				CEE3FF171B31BDB1004C2FB8 /* Images.xcassets */,
+				CEE3FF191B31BDB1004C2FB8 /* LaunchScreen.xib */,
+				CEE3FF0A1B31BDB1004C2FB8 /* Supporting Files */,
+			);
+			path = "Stick figure brawl";
+			sourceTree = "<group>";
+		};
+		CEE3FF0A1B31BDB1004C2FB8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEE3FF0B1B31BDB1004C2FB8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEE3FF231B31BDB1004C2FB8 /* Stick figure brawlTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEE3FF261B31BDB1004C2FB8 /* Stick_figure_brawlTests.swift */,
+				CEE3FF241B31BDB1004C2FB8 /* Supporting Files */,
+			);
+			path = "Stick figure brawlTests";
+			sourceTree = "<group>";
+		};
+		CEE3FF241B31BDB1004C2FB8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEE3FF251B31BDB1004C2FB8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEE3FF061B31BDB1004C2FB8 /* Stick figure brawl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEE3FF2A1B31BDB1004C2FB8 /* Build configuration list for PBXNativeTarget "Stick figure brawl" */;
+			buildPhases = (
+				CEE3FF031B31BDB1004C2FB8 /* Sources */,
+				CEE3FF041B31BDB1004C2FB8 /* Frameworks */,
+				CEE3FF051B31BDB1004C2FB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Stick figure brawl";
+			productName = "Stick figure brawl";
+			productReference = CEE3FF071B31BDB1004C2FB8 /* Stick figure brawl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEE3FF1F1B31BDB1004C2FB8 /* Stick figure brawlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEE3FF2D1B31BDB1004C2FB8 /* Build configuration list for PBXNativeTarget "Stick figure brawlTests" */;
+			buildPhases = (
+				CEE3FF1C1B31BDB1004C2FB8 /* Sources */,
+				CEE3FF1D1B31BDB1004C2FB8 /* Frameworks */,
+				CEE3FF1E1B31BDB1004C2FB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEE3FF221B31BDB1004C2FB8 /* PBXTargetDependency */,
+			);
+			name = "Stick figure brawlTests";
+			productName = "Stick figure brawlTests";
+			productReference = CEE3FF201B31BDB1004C2FB8 /* Stick figure brawlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEE3FEFF1B31BDB1004C2FB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Anti-Hero";
+				TargetAttributes = {
+					CEE3FF061B31BDB1004C2FB8 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					CEE3FF1F1B31BDB1004C2FB8 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = CEE3FF061B31BDB1004C2FB8;
+					};
+				};
+			};
+			buildConfigurationList = CEE3FF021B31BDB1004C2FB8 /* Build configuration list for PBXProject "Stick figure brawl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEE3FEFE1B31BDB1004C2FB8;
+			productRefGroup = CEE3FF081B31BDB1004C2FB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEE3FF061B31BDB1004C2FB8 /* Stick figure brawl */,
+				CEE3FF1F1B31BDB1004C2FB8 /* Stick figure brawlTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEE3FF051B31BDB1004C2FB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7010F81B34994F00876DD3 /* tryagain.png in Resources */,
+				CEE3FF351B322FC5004C2FB8 /* running.atlas in Resources */,
+				CE7010F21B333FBC00876DD3 /* gruntpunch.atlas in Resources */,
+				CE7010FA1B34997800876DD3 /* gameover.png in Resources */,
+				CEE3FF1B1B31BDB1004C2FB8 /* LaunchScreen.xib in Resources */,
+				CEE3FF371B32FEC5004C2FB8 /* runright.png in Resources */,
+				CEE3FF181B31BDB1004C2FB8 /* Images.xcassets in Resources */,
+				CEE3FF3B1B330C11004C2FB8 /* runleft.png in Resources */,
+				CEE3FF391B3307FF004C2FB8 /* platform.png in Resources */,
+				CEE3FF0F1B31BDB1004C2FB8 /* GameScene.sks in Resources */,
+				CEE3FF161B31BDB1004C2FB8 /* Main.storyboard in Resources */,
+				CEE3FF311B31BE2A004C2FB8 /* punching.atlas in Resources */,
+				CE7010F41B34661200876DD3 /* gruntrun.atlas in Resources */,
+				CEE3FF331B3207A8004C2FB8 /* attack.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE3FF1E1B31BDB1004C2FB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEE3FF031B31BDB1004C2FB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE3FF111B31BDB1004C2FB8 /* GameScene.swift in Sources */,
+				CEE3FF131B31BDB1004C2FB8 /* GameViewController.swift in Sources */,
+				CEE3FF0D1B31BDB1004C2FB8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE3FF1C1B31BDB1004C2FB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE3FF271B31BDB1004C2FB8 /* Stick_figure_brawlTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEE3FF221B31BDB1004C2FB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEE3FF061B31BDB1004C2FB8 /* Stick figure brawl */;
+			targetProxy = CEE3FF211B31BDB1004C2FB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEE3FF141B31BDB1004C2FB8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEE3FF151B31BDB1004C2FB8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEE3FF191B31BDB1004C2FB8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEE3FF1A1B31BDB1004C2FB8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEE3FF281B31BDB1004C2FB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEE3FF291B31BDB1004C2FB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEE3FF2B1B31BDB1004C2FB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Stick figure brawl/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CEE3FF2C1B31BDB1004C2FB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Stick figure brawl/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CEE3FF2E1B31BDB1004C2FB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Stick figure brawlTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stick figure brawl.app/Stick figure brawl";
+			};
+			name = Debug;
+		};
+		CEE3FF2F1B31BDB1004C2FB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Stick figure brawlTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stick figure brawl.app/Stick figure brawl";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEE3FF021B31BDB1004C2FB8 /* Build configuration list for PBXProject "Stick figure brawl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE3FF281B31BDB1004C2FB8 /* Debug */,
+				CEE3FF291B31BDB1004C2FB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEE3FF2A1B31BDB1004C2FB8 /* Build configuration list for PBXNativeTarget "Stick figure brawl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE3FF2B1B31BDB1004C2FB8 /* Debug */,
+				CEE3FF2C1B31BDB1004C2FB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEE3FF2D1B31BDB1004C2FB8 /* Build configuration list for PBXNativeTarget "Stick figure brawlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE3FF2E1B31BDB1004C2FB8 /* Debug */,
+				CEE3FF2F1B31BDB1004C2FB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEE3FEFF1B31BDB1004C2FB8 /* Project object */;
+}
