@@ -82,9 +82,6 @@ class GameScene: SKScene {
         ]
         let actionAnim = SKAction.animateWithTextures(textures, timePerFrame: 0.05, resize: true, restore: false)
         
-        
-        
-        
         hero.runAction(SKAction.sequence([actionAnim, SKAction.setTexture(SKTexture(imageNamed: "punch1"), resize: true)]))
         
         for grunt in grunts.children {
